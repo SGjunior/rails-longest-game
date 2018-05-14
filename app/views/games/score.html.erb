@@ -1,0 +1,19 @@
+<div class="game-container">
+  <div class="col-xs-12">
+    <h1>Game results</h1>
+    <hr>
+    <br>
+    <div class="result">
+      <div class="your-word"><strong>'<%= @word %>'</strong></div>
+      <br>
+      <div class="your-result"><%= @answer_message %></div>
+
+      <div class="your-score"><i>Score   : <%= @score %></i></div>
+      <div class="your-score"><i>Session : <%= @sessionScore %></i></div>
+      <hr>
+      <%= link_to new_path do %>
+      <div class="btn btn-info">Play again</div>
+      <% end %>
+    </div>
+  </div>
+</div>
